@@ -8,9 +8,7 @@
   <style>
     /* Default styles */
     body {
-        background-color: #1E1E1E;
-        margin: 0;
-        padding: 0;
+        background-color: #0B0F19;
     }
 
     .header {
@@ -145,41 +143,91 @@
             cursor: pointer;
         }
     }
-    .welcome-note{
+.welcome-note{
          color:rgb(249, 249, 251);font-size:18px; max-width: 30%;margin-top: 60px;
           font-family: 'sans-serif';
         }
+.welcome-message{
+    color:rgb(249, 249, 251);font-size:20px; max-width: 30%;margin-top: 60px;
+    font-family: 'Inter', sans-serif; /* Set font-family to Inter */
+    line-height: 1.5; 
+}
 .mobile_app_icons {
   margin-top: 70px;
-  margin-right: 70px;
   display: flex;
   justify-content: space-between; /* Distribute items evenly */
   max-width: 80%; /* Limit the width to avoid overflow */
+}
+.welcome-section{
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+}
+.welcome-banner{
+  height: 50px;
+}
+.welcome-banner img{
+  height: 300px;
 }
 .android_icon {
   width: 30px;
   height: 30px;
 }
 .android_icon img{
-  width: 300px;
+  width: 200px;
   height: 100px;
 }
 .ios_icon img{
-  width: 300px;
+  width: 200px;
   height: 100px;
+  margin-right: 90px;
 }
 .ios_icon {
   width: 30px;
   height: 30px;
 }
-.wrapper{
-  margin-left: 20px;
-  margin-right: 20px;
+.container{
+  margin-left: 15%;
+  margin-right: 15%;
 }
-   
+.services{
+  color: #fff;
+  margin-top: 140px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  color:rgb(249, 249, 251);
+  font-family: 'Inter', sans-serif; /* Set font-family to Inter */
+  line-height: 1.5; 
+  font-size:20px;
+}
+.design-service{
+  background-color: #252830;
+  width: 450px;
+  padding: 10px;
+  align-items: center; /* Center vertically */
+}
+.server-service{
+  background-color: #252830;
+  width: 450px;
+  padding: 10px;
+  align-items: center; /* Center vertically */
+}
+.development-service{
+  background-color: #252830;
+  width: 450px;
+  padding: 10px;
+  align-items: center; /* Center vertically */
+  margin: 5px;
+}
+.footer{
+  background-color: #fff;
+  height: 30px;
+} 
   </style>
 </head>
 <body>
+  <div class="wrapper">
   <div class="header">
     <div class="logo"><img src="./images/logo.png" width="60px" height="60px"/></div>
     <div class="nav">
@@ -206,8 +254,9 @@
     </div>
 
   </div>
-  <div class="wrapper">
-  <div class="welcome-note">
+  <div class="container">
+  <div class="welcome-section">
+<div class="welcome-message">
    Tired of excuses when you were expecting a final product ?Tired of hanging or very loading applications and  missed deadlines? got you covered, Your right  Technological partner Consultant on work 
    related to : 
    <br>
@@ -215,6 +264,10 @@
     <li>Business Analyst</li>
     <li>Capacity building</li>
   </ol>
+</div>
+<div class="welcome-banner">
+  <img src="./images/banner.png">
+</div>
    </div>
 
    <div class="mobile_app_icons">
@@ -226,9 +279,32 @@
       <img src="./images/iphone.png">
     </div>
   </div>
+  <div class="services">
+    <div class="design-service">
+      <center>
+      <b><u>Designs</u></b><br>
+      We Design Application that suits across all devices (Phone,Tablet,Deskop)u
+    </center>
+    </div>
+    <div class="development-service">
+      <center>
+       <b><u>Development</u></b><br>
+           We build websites in different technologies(React js,Next Js,Django,Laravel,Spring Boot)
+    </center>
+    </div>
+    <div class="server-service">
+      <center>
+      <b><u>Server Configurations</u></b><br>
+      We configure Servers for larger and small institutions
+      </center>
+    </div>
+  </div>
    </div>
   </div>
-
+  <div class="footer">
+    <br><br>
+  </div>
+</div>
   <script>
     // Toggle phone menus on click
     document.querySelector('.hamburger-menu').addEventListener('click', function() {

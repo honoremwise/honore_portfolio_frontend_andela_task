@@ -148,8 +148,35 @@
     .welcome-note{
          color:rgb(249, 249, 251);font-size:18px; max-width: 30%;margin-top: 60px;
           font-family: 'sans-serif';
-          margin-left: 60px;
         }
+.mobile_app_icons {
+  margin-top: 70px;
+  margin-right: 70px;
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+  max-width: 80%; /* Limit the width to avoid overflow */
+}
+.android_icon {
+  width: 30px;
+  height: 30px;
+}
+.android_icon img{
+  width: 300px;
+  height: 100px;
+}
+.ios_icon img{
+  width: 300px;
+  height: 100px;
+}
+.ios_icon {
+  width: 30px;
+  height: 30px;
+}
+.wrapper{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+   
   </style>
 </head>
 <body>
@@ -179,6 +206,7 @@
     </div>
 
   </div>
+  <div class="wrapper">
   <div class="welcome-note">
    Tired of excuses when you were expecting a final product ?Tired of hanging or very loading applications and  missed deadlines? got you covered, Your right  Technological partner Consultant on work 
    related to : 
@@ -189,14 +217,17 @@
   </ol>
    </div>
 
-   <div>
+   <div class="mobile_app_icons">
     <div class="android_icon">
+      <img src="./images/icon.png">
 
     </div>
     <div class="ios_icon">
-
+      <img src="./images/iphone.png">
     </div>
+  </div>
    </div>
+  </div>
 
   <script>
     // Toggle phone menus on click
